@@ -71,3 +71,10 @@ body {
     float: left;
     margin-right: 1%;
   }
+
+  main {
+    display: grid;
+    grid-template-areas: "article article aside aside";
+    grid-gap: 20%;
+  }
+  
