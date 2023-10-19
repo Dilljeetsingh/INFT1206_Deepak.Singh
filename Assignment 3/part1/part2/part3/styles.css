@@ -49,3 +49,31 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+  @font-face {
+    font-family: 'bree_serifregular';
+    src: url('fonts/breeserif-regular-webfont.woff2') format('woff2');
+    src: url('fonts/breeserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'alfa_slab_oneregular';
+    src: url('fonts/alfaslabone-regular-webfont.woff2') format('woff2');
+    src:url('fonts/alfaslabone-regular-webfont.woff') format('woff')
+  }
+
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    font-family: 'alfa_slab_oneregular';
+    font-weight: 100;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
