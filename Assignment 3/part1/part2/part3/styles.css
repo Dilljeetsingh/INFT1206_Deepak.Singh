@@ -110,3 +110,17 @@
     color: white;
     text-decoration: none;
   }
+
+  li, p {
+    line-height: 1.5;
+  }
+  ul, p {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+  ul {
+    list-style-type: square;
+  }
+  ul li::marker {
+    color: #296767;
+  }
