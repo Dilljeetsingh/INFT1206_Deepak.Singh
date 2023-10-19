@@ -66,3 +66,8 @@ body {
     position: sticky;
     top: 0px;
   }
+
+  .feature {
+    float: left;
+    margin-right: 1%;
+  }
