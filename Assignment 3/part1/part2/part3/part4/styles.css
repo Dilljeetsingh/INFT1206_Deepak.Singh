@@ -77,4 +77,14 @@ body {
     grid-template-areas: "article article aside aside";
     grid-gap: 20%;
   }
-  
+
+  aside {
+    grid-area: aside;
+  }
+
+  .photos {
+    columns: 2;
+  }
+  .photos li {
+    margin: 0.1em;
+  }
