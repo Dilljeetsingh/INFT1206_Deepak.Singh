@@ -77,3 +77,12 @@
     text-align: center;
     letter-spacing: 0.05em;
   }
+
+  h2 {
+    font-size:2.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  section h2 + p {
+    text-indent: 2rem;
+  }
