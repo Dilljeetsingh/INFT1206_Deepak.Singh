@@ -1,3 +1,9 @@
+/**
+	Name: Deepak Singh
+	File: main.js
+	Date: 24 Nov 2023
+	 Our little balls will bounce around on the screen, and change color when they touch each other. 
+*/
 // setup canvas
 
 const canvas = document.querySelector('canvas');
