@@ -20,4 +20,22 @@
     var insertY = ["the soup kitchen", "Disneyland", "the White House"];
 
     var insertZ = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
-	  
+	randomize.addEventListener('click', result);
+
+	function result() {
+		var newStory = storyText;
+		var xItem = randomValueFromArray(insertX);
+		var yItem = randomValueFromArray(insertY);
+		var zItem = randomValueFromArray(insertZ);
+
+		var newStory = newStory.replace(':insertx:', xItem);
+		var newStory = newStory.replace(':insertx:', xItem);
+		var newStory = newStory.replace(':inserty:', yItem);
+		var newStory = newStory.replace(':insertz:', zItem);
+		
+		if (customName.value != '') {
+			var name = customName.value;
+			newStory = newStory.replace('Bob', name);
+
+		}
+	}
