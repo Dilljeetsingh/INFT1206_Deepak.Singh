@@ -28,3 +28,11 @@ function Ball(x, y, velX, velY, color, size) {
   this.color = color;
   this.size = size;
 }
+
+// adding the draw method to the Ball's prototype
+Ball.prototype.draw = function() {
+  ctx.beginPath();
+  ctx.fillStyle = this.color;
+  ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+  ctx.fill();
+}
