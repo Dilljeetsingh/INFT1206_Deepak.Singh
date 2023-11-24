@@ -23,5 +23,13 @@ thumbBar.appendChild(newImage);
 }
 thumbnailLoop();
 
+/* Making the clicked thumbnail the large image */
+
+thumbBar.addEventListener('click', (e) => {
+    if(e.target && e.target.nodeName == "IMG") {
+      displayedImage.src = e.target.src;
+  }
+  }); // Close event listener
+
 /* Wiring up the Darken/Lighten button */
 newImage.setAttribute('alt', xxx);
