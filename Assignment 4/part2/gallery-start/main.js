@@ -32,4 +32,11 @@ thumbBar.addEventListener('click', (e) => {
   }); // Close event listener
 
 /* Wiring up the Darken/Lighten button */
-newImage.setAttribute('alt', xxx);
+btn.addEventListener('click', (e) => {
+    if (e.target.className == 'dark') {
+      btn.setAttribute('class', 'light');
+      btn.textContent = 'Lighten';
+      overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+  }
+  
+});
