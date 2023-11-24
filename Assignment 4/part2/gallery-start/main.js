@@ -1,3 +1,9 @@
+/**
+	Name: Deepak Singh
+	File: main.js
+	Date: 24 nov 2023
+	 a JavaScript-powered image gallery.
+*/
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
