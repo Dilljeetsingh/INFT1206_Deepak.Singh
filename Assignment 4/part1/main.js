@@ -38,4 +38,11 @@
 			newStory = newStory.replace('Bob', name);
 
 		}
+		if (document.getElementById("uk").checked) {
+			var weight = Math.round(300 * 0.0714286) + ' stone';
+			var temperature = Math.round((94 - 32) * (5/9)) + ' centigrade';
+			var newStory = newStory.replace('94 farenheit', temperature);
+			var newStory = newStory.replace('300 pounds', weight);
+		
+		  }
 	}
