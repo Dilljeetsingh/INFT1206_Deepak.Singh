@@ -6,6 +6,8 @@
 */
 // functionality for showing/hiding the comments section
 
+// functionality for showing/hiding the comments section
+
 const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
@@ -21,7 +23,7 @@ showHideBtn.onclick = function() {
     commentWrapper.style.display = 'none';
   }
 };
-
+  
 // functionality for adding a new comment via the comments form
 
 const form = document.querySelector('.comment-form');
@@ -36,18 +38,21 @@ form.onsubmit = function(e) {
 
 function submitComment() {
   const listItem = document.createElement('li');
+  const nameLabel = document.createElement('span');
+  const commentLabel = document.createElement('span');
   const namePara = document.createElement('p');
   const commentPara = document.createElement('p');
   const nameValue = nameField.value;
   const commentValue = commentField.value;
 
-  namePara.textContent = nameValue;
-  commentPara.textContent = commentValue;
+  // Make author and message tabbable
+  namePara.setAttribute("tabindex", "0");
+  commentPara.setAttribute("tabindex", "0");
 
-  list.appendChild(listItem);
-  listItem.appendChild(namePara);
-  listItem.appendChild(commentPara);
+  // Give author and comment labels
+  nameLabel.textContent = "Author: ";
+  commentLabel.textContent = "Comment: ";
 
-  nameField.value = '';
-  commentField.value = '';
+  namePara.appendChild(nameLabel);
+  commentPara.appendChild(commentLabel);
 }
