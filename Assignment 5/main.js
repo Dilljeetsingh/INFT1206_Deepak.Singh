@@ -1,3 +1,9 @@
+/**
+	Name: Deepak Singh
+	File: main.js
+	Date: 12/12/2023
+	In the assessment for this module, we present to you a simple site with a number of accessibility issues that you need to diagnose and fix.
+*/
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
