@@ -60,7 +60,7 @@ p, li, table {
 /* || header layout */
 
 nav, article, footer, .secondary {
-  background-color: #B7E4C7;
+  background-color: whitesmoke;
 }
 
 article, footer, .secondary {
